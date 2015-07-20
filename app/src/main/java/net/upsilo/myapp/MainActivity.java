@@ -50,7 +50,7 @@ public class MainActivity extends ActionBarActivity {
         Button button = (Button)this.findViewById(R.id.button);
         button.setText("Click!! (" + this.clickCount + ")");
     }
-
+    // Hello
     private List<String> gameText = new ArrayList<String>();
     private int[] gameButtonIds = { R.id.toggleButton1, R.id.toggleButton2, R.id.toggleButton3,
         R.id.toggleButton4, R.id.toggleButton5, R.id.toggleButton6, R.id.toggleButton7,
