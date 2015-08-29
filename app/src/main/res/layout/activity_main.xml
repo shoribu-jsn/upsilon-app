@@ -27,7 +27,8 @@
         android:layout_below="@+id/button"
         android:layout_alignRight="@+id/button"
         android:layout_alignEnd="@+id/button"
-        android:layout_marginTop="56dp" />
+        android:layout_marginTop="56dp"
+        android:onClick="onClickToggleButton" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -36,7 +37,8 @@
         android:id="@+id/toggleButton2"
         android:layout_alignTop="@+id/toggleButton1"
         android:layout_toRightOf="@+id/toggleButton1"
-        android:layout_toEndOf="@+id/toggleButton1" />
+        android:layout_toEndOf="@+id/toggleButton1"
+        android:onClick="onClickToggleButton" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -45,7 +47,8 @@
         android:id="@+id/toggleButton3"
         android:layout_alignTop="@+id/toggleButton2"
         android:layout_toRightOf="@+id/toggleButton2"
-        android:layout_toEndOf="@+id/toggleButton2" />
+        android:layout_toEndOf="@+id/toggleButton2"
+        android:onClick="onClickToggleButton" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -54,7 +57,8 @@
         android:id="@+id/toggleButton4"
         android:layout_alignTop="@+id/toggleButton3"
         android:layout_toRightOf="@+id/toggleButton3"
-        android:layout_toEndOf="@+id/toggleButton3" />
+        android:layout_toEndOf="@+id/toggleButton3"
+        android:onClick="onClickToggleButton" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -63,7 +67,8 @@
         android:id="@+id/toggleButton5"
         android:layout_below="@+id/toggleButton1"
         android:layout_alignLeft="@+id/toggleButton1"
-        android:layout_alignStart="@+id/toggleButton1" />
+        android:layout_alignStart="@+id/toggleButton1"
+        android:onClick="onClickToggleButton" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -72,7 +77,8 @@
         android:id="@+id/toggleButton6"
         android:layout_below="@+id/toggleButton2"
         android:layout_toRightOf="@+id/toggleButton5"
-        android:layout_toEndOf="@+id/toggleButton5" />
+        android:layout_toEndOf="@+id/toggleButton5"
+        android:onClick="onClickToggleButton" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -81,7 +87,8 @@
         android:id="@+id/toggleButton7"
         android:layout_below="@+id/toggleButton3"
         android:layout_toRightOf="@+id/toggleButton6"
-        android:layout_toEndOf="@+id/toggleButton6" />
+        android:layout_toEndOf="@+id/toggleButton6"
+        android:onClick="onClickToggleButton" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -90,7 +97,8 @@
         android:id="@+id/toggleButton8"
         android:layout_below="@+id/toggleButton4"
         android:layout_toRightOf="@+id/toggleButton7"
-        android:layout_toEndOf="@+id/toggleButton7" />
+        android:layout_toEndOf="@+id/toggleButton7"
+        android:onClick="onClickToggleButton" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -99,7 +107,8 @@
         android:id="@+id/toggleButton9"
         android:layout_below="@+id/toggleButton5"
         android:layout_alignLeft="@+id/toggleButton5"
-        android:layout_alignStart="@+id/toggleButton5" />
+        android:layout_alignStart="@+id/toggleButton5"
+        android:onClick="onClickToggleButton" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -108,7 +117,8 @@
         android:id="@+id/toggleButton10"
         android:layout_below="@+id/toggleButton6"
         android:layout_toRightOf="@+id/toggleButton9"
-        android:layout_toEndOf="@+id/toggleButton9" />
+        android:layout_toEndOf="@+id/toggleButton9"
+        android:onClick="onClickToggleButton" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -117,7 +127,8 @@
         android:id="@+id/toggleButton11"
         android:layout_below="@+id/toggleButton7"
         android:layout_toRightOf="@+id/toggleButton10"
-        android:layout_toEndOf="@+id/toggleButton10" />
+        android:layout_toEndOf="@+id/toggleButton10"
+        android:onClick="onClickToggleButton" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -126,7 +137,8 @@
         android:id="@+id/toggleButton12"
         android:layout_below="@+id/toggleButton8"
         android:layout_toRightOf="@+id/toggleButton11"
-        android:layout_toEndOf="@+id/toggleButton11" />
+        android:layout_toEndOf="@+id/toggleButton11"
+        android:onClick="onClickToggleButton" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -135,7 +147,8 @@
         android:id="@+id/toggleButton13"
         android:layout_below="@+id/toggleButton9"
         android:layout_alignLeft="@+id/toggleButton9"
-        android:layout_alignStart="@+id/toggleButton9" />
+        android:layout_alignStart="@+id/toggleButton9"
+        android:onClick="onClickToggleButton" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -144,7 +157,8 @@
         android:id="@+id/toggleButton14"
         android:layout_toRightOf="@+id/toggleButton13"
         android:layout_toEndOf="@+id/toggleButton13"
-        android:layout_below="@+id/toggleButton10" />
+        android:layout_below="@+id/toggleButton10"
+        android:onClick="onClickToggleButton" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -153,7 +167,8 @@
         android:id="@+id/toggleButton15"
         android:layout_toRightOf="@+id/toggleButton14"
         android:layout_toEndOf="@+id/toggleButton14"
-        android:layout_below="@+id/toggleButton11" />
+        android:layout_below="@+id/toggleButton11"
+        android:onClick="onClickToggleButton" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -162,7 +177,8 @@
         android:id="@+id/toggleButton16"
         android:layout_toRightOf="@+id/toggleButton15"
         android:layout_toEndOf="@+id/toggleButton15"
-        android:layout_below="@+id/toggleButton12" />
+        android:layout_below="@+id/toggleButton12"
+        android:onClick="onClickToggleButton" />
 
     <TextView
         android:layout_width="wrap_content"

@@ -71,7 +71,38 @@ public class MainActivity extends ActionBarActivity {
             ToggleButton button = (ToggleButton)this.findViewById(this.gameButtonIds[index]);
             button.setTextOn(text);
             button.setChecked(false);
+            button.setEnabled(true);
             index++;
         }
+    }
+
+    // クリックされた数字ペアのうち一枚目のボタンを保持する
+    private ToggleButton lastClickedButton = null;
+
+    public void onClickToggleButton(View view) {
+        ToggleButton sender = (ToggleButton)view;
+
+        if (lastClickedButton == null) {
+            // 一枚目
+            this.lastClickedButton = sender;
+            return;
+        }
+
+        // 二枚目
+        if (sender.getTextOn().equals(this.lastClickedButton.getTextOn())) {
+            // 二枚とも同じ数字だった場合
+            // 揃った数字はクリック不可にする
+            this.lastClickedButton.setEnabled(false);
+            sender.setEnabled(false);
+        }
+        else {
+            // 数字が揃わなかった場合
+            // 再び数字を非表示にする
+            this.lastClickedButton.setChecked(false);
+            sender.setChecked(false);
+        }
+
+        // 次回クリック時は1枚目と同じ処理
+        this.lastClickedButton = null;
     }
 }
