@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import java.util.*;
@@ -44,6 +45,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     private int clickCount = 0;
+    private int btn_click_count = 0;
 
     public void onClickButton(View view) {
         this.clickCount++;
@@ -80,6 +82,11 @@ public class MainActivity extends ActionBarActivity {
     private ToggleButton lastClickedButton = null;
 
     public void onClickToggleButton(View view) {
+        btn_click_count++;
+
+        TextView textview = (TextView)this.findViewById(R.id.textView3);
+        textview.setText("" + btn_click_count);
+
         ToggleButton sender = (ToggleButton)view;
 
         if (lastClickedButton == null) {
@@ -104,5 +111,6 @@ public class MainActivity extends ActionBarActivity {
 
         // 次回クリック時は1枚目と同じ処理
         this.lastClickedButton = null;
+
     }
 }
