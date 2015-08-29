@@ -49,6 +49,8 @@ public class MainActivity extends ActionBarActivity {
         this.clickCount++;
         Button button = (Button)this.findViewById(R.id.button);
         button.setText("Click!! (" + this.clickCount + ")");
+
+        this.initializeGame();
     }
     // Hello
     private List<String> gameText = new ArrayList<String>();
@@ -68,6 +70,7 @@ public class MainActivity extends ActionBarActivity {
         for (String text : this.gameText) {
             ToggleButton button = (ToggleButton)this.findViewById(this.gameButtonIds[index]);
             button.setTextOn(text);
+            button.setChecked(false);
             index++;
         }
     }
